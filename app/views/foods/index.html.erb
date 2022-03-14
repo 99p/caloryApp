@@ -1,0 +1,27 @@
+<h1>Foods#index</h1>
+
+<style type="text/css">
+  table, td, th { border: 2px #2b2b2b solid; border-collapse: collapse; width:30%; }
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>kcal</th>
+      <th>net</th>
+      <th>jan</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @foods.each do |food| %>
+      <tr>
+        <td><%= food.name %></td>
+        <td><%= food.kcal %></td>
+        <td><%= food.net %></td>
+        <td><%= food.jan %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
